@@ -29,61 +29,52 @@ O código to_do_list.py implementa um to-do list em Python no formato de termina
     - Objetivo: Mostrar as opções disponíveis para o usuário.
     - Uso: É chamada no início de cada ciclo do programa.
 
--  adicionar_tarefa(lista)
-    Permite que o usuário adicione uma nova tarefa à lista.
-
-    -  Parâmetros:
-        lista: A lista que armazena as tarefas.
-    - Funcionamento: 
-        1. Solicita ao usuário que insira o nome da tarefa.
-        2. Adiciona a tarefa à lista, como um dicionário contendo:
-            - A descrição da tarefa ("tarefa").
-            - O status de conclusão ("concluida": False).
-        3. Exibe uma mensagem de confirmação.
-    
-    - listar_tarefas(lista)
-    Exibe todas as tarefas da lista, indicando se estão concluídas.
+- adicionar_tarefa(lista): Permite que o usuário adicione uma nova tarefa à lista.
 
     - Parâmetros:
-        lista: A lista de tarefas.
+        - lista: A lista que armazena as tarefas.
+    - Funcionamento: 
+        - Solicita ao usuário que insira o nome da tarefa.
+        - Adiciona a tarefa à lista, como um dicionário contendo:
+            - A descrição da tarefa ("tarefa").
+            - O status de conclusão ("concluida": False).
+        - Exibe uma mensagem de confirmação.
+    
+- listar_tarefas(lista): Exibe todas as tarefas da lista, indicando se estão concluídas.
+    - Parâmetros:
+        - lista: A lista de tarefas.
     - Funcionamento:
-        1. Verifica se a lista está vazia. Caso esteja, informa ao usuário.
-        2. Caso contrário, exibe todas as tarefas com um índice numérico.
-        3. Mostra o status:
+        - Verifica se a lista está vazia. Caso esteja, informa ao usuário.
+        - Caso contrário, exibe todas as tarefas com um índice numérico.
+        - Mostra o status:
             - [✔]: Tarefa concluída.
             - [ ]: Tarefa pendente.
 
-    - marcar_concluida(lista)
-    Permite que o usuário marque uma tarefa como concluída.
-
+- marcar_concluida(lista): Permite que o usuário marque uma tarefa como concluída.
     - Parâmetros:
-        lista: A lista de tarefas.
+        - lista: A lista de tarefas.
     - Funcionamento:
-        1. Exibe as tarefas com listar_tarefas.
-        2. Solicita o número da tarefa a ser marcada como concluída.
-        3. Valida o número informado:
+        - Exibe as tarefas com listar_tarefas.
+        - Solicita o número da tarefa a ser marcada como concluída.
+        - Valida o número informado:
             - Se válido, altera "concluida" para True.
             - Caso contrário, exibe uma mensagem de erro.
 
-    - remover_tarefa(lista)
-    Remove uma tarefa da lista.
-
+- remover_tarefa(lista): Remove uma tarefa da lista.
     - Parâmetros:
-        lista: A lista de tarefas.
+        - lista: A lista de tarefas.
     - Funcionamento:
-        1. Exibe as tarefas com listar_tarefas.
-        2. Solicita o número da tarefa a ser removida.
-        3. Valida o número e remove a tarefa correspondente da lista.
+        - Exibe as tarefas com listar_tarefas.
+        - Solicita o número da tarefa a ser removida.
+        - Valida o número e remove a tarefa correspondente da lista.
 
-    - Função Principal (main)
-        O coração do programa, que controla o fluxo de execução.
-        
+- Função Principal (main): O coração do programa, que controla o fluxo de execução.
     - Objetivo: Gerenciar as interações do usuário com base no menu.
     - Funcionamento:
-        1. Inicializa uma lista vazia tarefas para armazenar as tarefas.
-        2. Exibe o menu e solicita a escolha do usuário.
-        3. Executa a ação correspondente, chamando as funções apropriadas.
-        4. Sai do programa se o usuário escolher a opção "5".
+        - Inicializa uma lista vazia tarefas para armazenar as tarefas.
+        - Exibe o menu e solicita a escolha do usuário.
+        - Executa a ação correspondente, chamando as funções apropriadas.
+        - Sai do programa se o usuário escolher a opção "5".
 
 # Resumo
 O programa usa listas e dicionários para gerenciar tarefas, além de funções separadas para modularidade. O fluxo é simples:
