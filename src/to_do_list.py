@@ -31,3 +31,15 @@ def marcar_concluida(lista):
             print("Número inválido!")
     except ValueError:
         print("Entrada inválida! Digite um número.")
+
+def remover_tarefa(lista):
+    listar_tarefas(lista)
+    try:
+        indice = int(input("Digite o número da tarefa para remover: ")) - 1
+        if 0 <= indice < len(lista):
+            tarefa = lista.pop(indice)
+            print(f"Tarefa '{tarefa['tarefa']}' removida com sucesso!")
+        else:
+            print("Número inválido!")
+    except ValueError:
+        print("Entrada inválida! Digite um número.")
