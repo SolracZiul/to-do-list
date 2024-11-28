@@ -2,10 +2,10 @@
 
 # Objetivo
 - Contruir um programa em Python que permita:
-    - Adicionar tarefas
-    - Listar tarefas pendentes
-    - Marcar tarefas como concluídas
-    - Remover tarefas
+    1. Adicionar tarefas
+    2. Listar tarefas pendentes
+    3. Marcar tarefas como concluídas
+    4. Remover tarefas
 
 # Estrutura do projeto
 -  O programa será baseado no terminal, com um menu simples que permite interagir com as tarefas.
@@ -22,11 +22,11 @@
 O código to_do_list.py implementa um to-do list em Python no formato de terminal, com funcionalidades básicas de gerenciamento de tarefas. Vamos explicar parte por parte.
 
 1. Estrutura Geral
-O programa é dividido em funções que realizam ações específicas, como adicionar tarefas, listar, marcar como concluídas, e remover. Essas funções são chamadas dentro de um loop principal, permitindo que o usuário escolha o que deseja fazer.
+- O programa é dividido em funções que realizam ações específicas, como adicionar tarefas, listar, marcar como concluídas, e remover. Essas funções são chamadas dentro de um loop principal, permitindo que o usuário escolha o que deseja fazer.
 
 2. Funções
     - exibir_menu()
-        Esta função exibe o menu principal para o usuário.
+    Esta função exibe o menu principal para o usuário.
 
     - Objetivo: Mostrar as opções disponíveis para o usuário.
     - Uso: É chamada no início de cada ciclo do programa.
