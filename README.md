@@ -1,5 +1,3 @@
-# Planejamento to-do-list
-
 ## Objetivo
 
 Contruir um programa em Python que permita:
@@ -46,6 +44,8 @@ def exibir_menu():
 - Objetivo: Mostrar as opções disponíveis para o usuário.
 - Uso: É chamada no início de cada ciclo do programa.
 
+---
+
 ### Adicionar tarefas 
 
 Permite que o usuário adicione uma nova tarefa à lista.
@@ -65,7 +65,9 @@ def adicionar_tarefa(lista):
         1. A descrição da tarefa ("tarefa").
         2. O status de conclusão ("concluida": False).
     - Exibe uma mensagem de confirmação.
-    
+
+---
+
 ### Listar tarefas
 
 Exibe todas as tarefas da lista, indicando se estão concluídas.
@@ -89,6 +91,8 @@ def listar_tarefas(lista):
     - Mostra o status:
         1. [✔]: Tarefa concluída.
         2. [🔄]: Tarefa pendente.
+
+---
 
 ### Marcar concluída 
 
@@ -117,6 +121,8 @@ def marcar_concluida(lista):
         1. Se válido, altera "concluida" para True.
         2. Caso contrário, exibe uma mensagem de erro.
 
+---
+
 ### Remover tarefa 
 
 Remove uma tarefa da lista.
@@ -141,6 +147,8 @@ def remover_tarefa(lista):
     - Exibe as tarefas com listar_tarefas.
     - Solicita o número da tarefa a ser removida.
     - Valida o número e remove a tarefa correspondente da lista.
+
+---
 
 ### Função Principal
 
