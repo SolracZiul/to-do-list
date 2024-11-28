@@ -1,14 +1,14 @@
 # Planejamento to-do-list
 
 # Objetivo
-- Contruir um programa em Python que permita:
-    - Adicionar tarefas
-    - Listar tarefas pendentes
-    - Marcar tarefas como concluídas
-    - Remover tarefas
+Contruir um programa em Python que permita:
+- Adicionar tarefas
+- Listar tarefas pendentes
+- Marcar tarefas como concluídas
+- Remover tarefas
 
 # Estrutura do projeto
--  O programa será baseado no terminal, com um menu simples que permite interagir com as tarefas.
+O programa será baseado no terminal, com um menu simples que permite interagir com as tarefas.
 
 # Cronograma
 - Dia 1: Configurar o ambiente e estruturar o projeto.
@@ -48,7 +48,7 @@ O código to_do_list.py implementa um to-do list em Python no formato de termina
         - Caso contrário, exibe todas as tarefas com um índice numérico.
         - Mostra o status:
             1. [✔]: Tarefa concluída.
-            2. [ ]: Tarefa pendente.
+            2. [  ]: Tarefa pendente.
 
 - marcar_concluida(lista): Permite que o usuário marque uma tarefa como concluída.
     - Parâmetros:
