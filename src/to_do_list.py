@@ -19,3 +19,15 @@ def listar_tarefas(lista):
     for i, item in enumerate(lista):
         status = "[✔]" if item["concluida"] else "[ ]"
         print(f"{i + 1}. {status} {item['tarefa']}")
+
+def marcar_concluida(lista):
+    listar_tarefas(lista)
+    try:
+        indice = int(input("Digite o número da tarefa para marcar como concluída: ")) - 1
+        if 0 <= indice < len(lista):
+            lista[indice]["concluida"] = True
+            print(f"Tarefa '{lista[indice]['tarefa']}' marcada como concluída!")
+        else:
+            print("Número inválido!")
+    except ValueError:
+        print("Entrada inválida! Digite um número.")
