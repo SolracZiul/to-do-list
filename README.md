@@ -27,7 +27,7 @@ O código to_do_list.py implementa um to-do list em Python no formato de termina
 O programa é dividido em funções que realizam ações específicas, como adicionar tarefas, listar, marcar como concluídas, e remover. Essas funções são chamadas dentro de um loop principal, permitindo que o usuário escolha o que deseja fazer.
 
 # Funções
-- exibir_menu(): 
+## exibir_menu()
 Esta função exibe o menu principal para o usuário.
 
 ```bash
