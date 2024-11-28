@@ -26,15 +26,7 @@ O programa é dividido em funções que realizam ações específicas, como adic
 
 2. Funções
     - exibir_menu()
-    Esta função exibe o menu principal para o usuário.
-
-    def exibir_menu():
-        print("\n--- To-Do List ---")
-        print("1. Adicionar Tarefa")
-        print("2. Listar Tarefas")
-        print("3. Marcar Tarefa como Concluída")
-        print("4. Remover Tarefa")
-        print("5. Sair")
+        Esta função exibe o menu principal para o usuário.
 
     - Objetivo: Mostrar as opções disponíveis para o usuário.
     - Uso: É chamada no início de cada ciclo do programa.
@@ -42,31 +34,17 @@ O programa é dividido em funções que realizam ações específicas, como adic
     -  adicionar_tarefa(lista)
     Permite que o usuário adicione uma nova tarefa à lista.
 
-    def adicionar_tarefa(lista):
-        tarefa = input("Digite a nova tarefa: ")
-        lista.append({"tarefa": tarefa, "concluida": False})
-        print(f"Tarefa '{tarefa}' adicionada com sucesso!")
-
     -  Parâmetros:
         lista: A lista que armazena as tarefas.
     - Funcionamento: 
         1. Solicita ao usuário que insira o nome da tarefa.
         2. Adiciona a tarefa à lista, como um dicionário contendo:
-        - A descrição da tarefa ("tarefa").
-        - O status de conclusão ("concluida": False).
+            - A descrição da tarefa ("tarefa").
+            - O status de conclusão ("concluida": False).
         3. Exibe uma mensagem de confirmação.
     
     - listar_tarefas(lista)
     Exibe todas as tarefas da lista, indicando se estão concluídas.
-
-    def listar_tarefas(lista):
-        if not lista:
-            print("Nenhuma tarefa encontrada.")
-            return
-        print("\nTarefas:")
-        for i, item in enumerate(lista):
-            status = "[✔]" if item["concluida"] else "[ ]"
-            print(f"{i + 1}. {status} {item['tarefa']}")
 
     - Parâmetros:
         lista: A lista de tarefas.
@@ -80,17 +58,6 @@ O programa é dividido em funções que realizam ações específicas, como adic
     - marcar_concluida(lista)
     Permite que o usuário marque uma tarefa como concluída.
 
-    def marcar_concluida(lista):
-        listar_tarefas(lista)
-        try:
-            indice = int(input("Digite o número da tarefa para marcar como concluída: ")) - 1
-            if 0 <= indice < len(lista):
-                lista[indice]["concluida"] = True
-                print(f"Tarefa '{lista[indice]['tarefa']}' marcada como concluída!")
-            else:
-                print("Número inválido!")
-        except ValueError:
-            print("Entrada inválida! Digite um número.")
     - Parâmetros:
         lista: A lista de tarefas.
     - Funcionamento:
@@ -103,18 +70,6 @@ O programa é dividido em funções que realizam ações específicas, como adic
     - remover_tarefa(lista)
     Remove uma tarefa da lista.
 
-    def remover_tarefa(lista):
-        listar_tarefas(lista)
-        try:
-            indice = int(input("Digite o número da tarefa para remover: ")) - 1
-            if 0 <= indice < len(lista):
-                tarefa = lista.pop(indice)
-                print(f"Tarefa '{tarefa['tarefa']}' removida com sucesso!")
-            else:
-                print("Número inválido!")
-        except ValueError:
-            print("Entrada inválida! Digite um número.")
-
     - Parâmetros:
         lista: A lista de tarefas.
     - Funcionamento:
@@ -124,26 +79,6 @@ O programa é dividido em funções que realizam ações específicas, como adic
 
     - Função Principal (main)
         O coração do programa, que controla o fluxo de execução.
-
-
-    def main():
-        tarefas = []
-        while True:
-            exibir_menu()
-            escolha = input("Escolha uma opção: ")
-            if escolha == "1":
-                adicionar_tarefa(tarefas)
-            elif escolha == "2":
-                listar_tarefas(tarefas)
-            elif escolha == "3":
-                marcar_concluida(tarefas)
-            elif escolha == "4":
-                remover_tarefa(tarefas)
-            elif escolha == "5":
-                print("Saindo... Até mais!")
-                break
-            else:
-                print("Opção inválida! Tente novamente.")
         
     - Objetivo: Gerenciar as interações do usuário com base no menu.
     - Funcionamento:
@@ -152,10 +87,10 @@ O programa é dividido em funções que realizam ações específicas, como adic
         3. Executa a ação correspondente, chamando as funções apropriadas.
         4. Sai do programa se o usuário escolher a opção "5".
 
-- Resumo
-    O programa usa listas e dicionários para gerenciar tarefas, além de funções separadas para modularidade. O fluxo é simples:
+# Resumo
+O programa usa listas e dicionários para gerenciar tarefas, além de funções separadas para modularidade. O fluxo é simples:
 
-    1. Adicionar tarefas.
-    2. Listar para verificar o progresso.
-    3. Marcar como concluída quando finalizadas.
-    4. Remover tarefas desnecessárias.
+1. Adicionar tarefas.
+2. Listar para verificar o progresso.
+3. Marcar como concluída quando finalizadas.
+4. Remover tarefas desnecessárias.
