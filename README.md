@@ -1,4 +1,4 @@
-## Objetivo
+# Objetivo
 
 Contruir um programa em Python que permita:
 - Adicionar tarefas
@@ -6,28 +6,28 @@ Contruir um programa em Python que permita:
 - Marcar tarefas como concluídas
 - Remover tarefas
 
-## Estrutura do projeto
+# Estrutura do projeto
 
 O programa será baseado no terminal, com um menu simples que permite interagir com as tarefas.
 
-## Cronograma
+# Cronograma
 - Dia 1: Configurar o ambiente e estruturar o projeto.
 - Dia 2: Implementar as funcionalidades 'Adicionar tarefas' e 'Listar tarefas pendentes'.
 - Dia 3: Implementar as funcionalidades 'Marcar tarefas como concluídas' e 'Remover tarefas'.
 - Dia 4: Analise de possíveis melhorias e implementação de novas funcionalidades. 
 - Dia 5: Testes e ajustes finais.
 
-## Funcionamento do programa
+# Funcionamento do programa
 
 O código to_do_list.py implementa um to-do list em Python no formato de terminal, com funcionalidades básicas de gerenciamento de tarefas. Vamos explicar parte por parte.
 
-## Estrutura Geral
+# Estrutura Geral
 O programa é dividido em funções que realizam ações específicas, como adicionar tarefas, listar, marcar como concluídas, e remover. Essas funções são chamadas dentro de um loop principal, permitindo que o usuário escolha o que deseja fazer.
 
-## Funções
+# Funções
 No contexto deste código, uma função é um bloco de código reutilizável que realiza uma tarefa específica. Ela ajuda a organizar o programa em partes menores e mais gerenciáveis. Cada função no código **to_do_list.py** tem um propósito claro, como exibir o menu, adicionar tarefas, ou listar tarefas.
 
-### Exibir menu
+## Exibir menu
 
 Esta função exibe o menu principal para o usuário.
 
@@ -46,7 +46,7 @@ def exibir_menu():
 
 ---
 
-### Adicionar tarefas 
+## Adicionar tarefas 
 
 Permite que o usuário adicione uma nova tarefa à lista.
 
@@ -68,7 +68,7 @@ def adicionar_tarefa(lista):
 
 ---
 
-### Listar tarefas
+## Listar tarefas
 
 Exibe todas as tarefas da lista, indicando se estão concluídas.
 
@@ -94,7 +94,7 @@ def listar_tarefas(lista):
 
 ---
 
-### Marcar concluída 
+## Marcar concluída 
 
 Permite que o usuário marque uma tarefa como concluída.
 
@@ -123,7 +123,7 @@ def marcar_concluida(lista):
 
 ---
 
-### Remover tarefa 
+## Remover tarefa 
 
 Remove uma tarefa da lista.
 
@@ -150,7 +150,7 @@ def remover_tarefa(lista):
 
 ---
 
-### Função Principal
+## Função Principal
 
 O coração do programa, que controla o fluxo de execução.
 
@@ -182,7 +182,7 @@ def main():
     3. Executa a ação correspondente, chamando as funções apropriadas.
     4. Sai do programa se o usuário escolher a opção "5".
 
-## Resumo
+# Resumo
 
 O programa usa listas e dicionários para gerenciar tarefas, além de funções separadas para modularidade. O fluxo é simples:
 
