@@ -26,6 +26,17 @@ O código to_do_list.py implementa um to-do list em Python no formato de termina
 
 2. Funções
 - exibir_menu(): Esta função exibe o menu principal para o usuário.
+
+```bash
+def exibir_menu():
+    print("\n--- To-Do List ---")
+    print("1. Adicionar Tarefa")
+    print("2. Listar Tarefas")
+    print("3. Marcar Tarefa como Concluída")
+    print("4. Remover Tarefa")
+    print("5. Sair")
+```
+
     - Objetivo: Mostrar as opções disponíveis para o usuário.
     - Uso: É chamada no início de cada ciclo do programa.
 
