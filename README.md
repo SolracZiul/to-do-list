@@ -1,5 +1,5 @@
 <div align="center">
-# Planejamento to-do-list
+***Planejamento to-do-list***
 </div>
 
 # Objetivo
@@ -23,11 +23,12 @@ O programa será baseado no terminal, com um menu simples que permite interagir 
 
 O código to_do_list.py implementa um to-do list em Python no formato de terminal, com funcionalidades básicas de gerenciamento de tarefas. Vamos explicar parte por parte.
 
-1. Estrutura Geral
-- O programa é dividido em funções que realizam ações específicas, como adicionar tarefas, listar, marcar como concluídas, e remover. Essas funções são chamadas dentro de um loop principal, permitindo que o usuário escolha o que deseja fazer.
+# Estrutura Geral
+O programa é dividido em funções que realizam ações específicas, como adicionar tarefas, listar, marcar como concluídas, e remover. Essas funções são chamadas dentro de um loop principal, permitindo que o usuário escolha o que deseja fazer.
 
-2. Funções
-- exibir_menu(): Esta função exibe o menu principal para o usuário.
+# Funções
+- exibir_menu(): 
+Esta função exibe o menu principal para o usuário.
 
 ```bash
 def exibir_menu():
