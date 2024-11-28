@@ -29,7 +29,7 @@ O programa é dividido em funções que realizam ações específicas, como adic
 ## Funções
 No contexto deste código, uma função é um bloco de código reutilizável que realiza uma tarefa específica. Ela ajuda a organizar o programa em partes menores e mais gerenciáveis. Cada função no código **to_do_list.py** tem um propósito claro, como exibir o menu, adicionar tarefas, ou listar tarefas.
 
-### exibir_menu()
+### Exibir menu
 
 Esta função exibe o menu principal para o usuário.
 
@@ -46,7 +46,7 @@ def exibir_menu():
 - Objetivo: Mostrar as opções disponíveis para o usuário.
 - Uso: É chamada no início de cada ciclo do programa.
 
-### adicionar_tarefa(lista): 
+### Adicionar tarefas 
 
 Permite que o usuário adicione uma nova tarefa à lista.
 
@@ -66,7 +66,7 @@ def adicionar_tarefa(lista):
         2. O status de conclusão ("concluida": False).
     - Exibe uma mensagem de confirmação.
     
-### listar_tarefas(lista): 
+### Listar tarefas
 
 Exibe todas as tarefas da lista, indicando se estão concluídas.
 
@@ -90,7 +90,7 @@ def listar_tarefas(lista):
         1. [✔]: Tarefa concluída.
         2. [🔄]: Tarefa pendente.
 
-### marcar_concluida(lista): 
+### Marcar concluída 
 
 Permite que o usuário marque uma tarefa como concluída.
 
@@ -117,7 +117,7 @@ def marcar_concluida(lista):
         1. Se válido, altera "concluida" para True.
         2. Caso contrário, exibe uma mensagem de erro.
 
-### remover_tarefa(lista): 
+### Remover tarefa 
 
 Remove uma tarefa da lista.
 
@@ -142,7 +142,7 @@ def remover_tarefa(lista):
     - Solicita o número da tarefa a ser removida.
     - Valida o número e remove a tarefa correspondente da lista.
 
-### Função Principal (main): 
+### Função Principal
 
 O coração do programa, que controla o fluxo de execução.
 
