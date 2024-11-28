@@ -1,4 +1,6 @@
+<div align="center">
 # Planejamento to-do-list
+</div>
 
 # Objetivo
 Contruir um programa em Python que permita:
@@ -37,8 +39,8 @@ def exibir_menu():
     print("5. Sair")
 ```
 
-    - Objetivo: Mostrar as opções disponíveis para o usuário.
-    - Uso: É chamada no início de cada ciclo do programa.
+- Objetivo: Mostrar as opções disponíveis para o usuário.
+- Uso: É chamada no início de cada ciclo do programa.
 
 - adicionar_tarefa(lista): Permite que o usuário adicione uma nova tarefa à lista.
 
