@@ -43,3 +43,22 @@ def remover_tarefa(lista):
             print("Número inválido!")
     except ValueError:
         print("Entrada inválida! Digite um número.")
+
+def main():
+    tarefas = []
+    while True:
+        exibir_menu()
+        escolha = input("Escolha uma opção: ")
+        if escolha == "1":
+            adicionar_tarefa(tarefas)
+        elif escolha == "2":
+            listar_tarefas(tarefas)
+        elif escolha == "3":
+            marcar_concluida(tarefas)
+        elif escolha == "4":
+            remover_tarefa(tarefas)
+        elif escolha == "5":
+            print("Saindo... Até mais!")
+            break
+        else:
+            print("Opção inválida! Tente novamente.")
