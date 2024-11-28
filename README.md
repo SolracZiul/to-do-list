@@ -2,10 +2,10 @@
 
 # Objetivo
 - Contruir um programa em Python que permita:
-    1. Adicionar tarefas
-    2. Listar tarefas pendentes
-    3. Marcar tarefas como concluídas
-    4. Remover tarefas
+    - Adicionar tarefas
+    - Listar tarefas pendentes
+    - Marcar tarefas como concluídas
+    - Remover tarefas
 
 # Estrutura do projeto
 -  O programa será baseado no terminal, com um menu simples que permite interagir com as tarefas.
@@ -36,8 +36,8 @@ O código to_do_list.py implementa um to-do list em Python no formato de termina
     - Funcionamento: 
         - Solicita ao usuário que insira o nome da tarefa.
         - Adiciona a tarefa à lista, como um dicionário contendo:
-            - A descrição da tarefa ("tarefa").
-            - O status de conclusão ("concluida": False).
+            1. A descrição da tarefa ("tarefa").
+            2. O status de conclusão ("concluida": False).
         - Exibe uma mensagem de confirmação.
     
 - listar_tarefas(lista): Exibe todas as tarefas da lista, indicando se estão concluídas.
@@ -47,8 +47,8 @@ O código to_do_list.py implementa um to-do list em Python no formato de termina
         - Verifica se a lista está vazia. Caso esteja, informa ao usuário.
         - Caso contrário, exibe todas as tarefas com um índice numérico.
         - Mostra o status:
-            - [✔]: Tarefa concluída.
-            - [ ]: Tarefa pendente.
+            1. [✔]: Tarefa concluída.
+            2. [ ]: Tarefa pendente.
 
 - marcar_concluida(lista): Permite que o usuário marque uma tarefa como concluída.
     - Parâmetros:
@@ -57,8 +57,8 @@ O código to_do_list.py implementa um to-do list em Python no formato de termina
         - Exibe as tarefas com listar_tarefas.
         - Solicita o número da tarefa a ser marcada como concluída.
         - Valida o número informado:
-            - Se válido, altera "concluida" para True.
-            - Caso contrário, exibe uma mensagem de erro.
+            1. Se válido, altera "concluida" para True.
+            2. Caso contrário, exibe uma mensagem de erro.
 
 - remover_tarefa(lista): Remove uma tarefa da lista.
     - Parâmetros:
